@@ -1,0 +1,194 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+body{
+	background-color: rgb(255, 255, 255);
+	font-size: 15px;
+	color:rgb(11, 56, 255);
+	background-color:rgb(255, 255, 255);
+}
+#read{
+	display: none;
+}
+.main-menu{
+	width: 100%;
+	height: 50px;
+	border:1px solid black;
+}
+.container-welcome{
+	background-color: royalblue;
+	border-radius: 20px;
+	padding: 20px;
+	color: whitesmoke;
+}
+.verse{
+	font-weight: bold;
+}
+.form-control{
+	padding: 10px;
+}
+.container-form{
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(201, 195, 195);
+	border-radius:20px;
+	padding:30px;
+	line-height:20px;
+}
+.form-control input[type=text],input[type=email]{
+	border: none;
+	border-bottom: 2px solid grey;
+	background-color: white;
+}
+.form-control input[type=text]:focus,input[type=email]:focus{
+outline: none;
+}
+.form-control input[type=submit]{
+	background:royalblue;
+	border: none;
+	padding:10px 30px;
+	cursor: pointer;
+	color: white;
+	border-radius: 5px;
+	outline:none;
+}
+.main-container{
+	margin:20px 8px;
+}
+.main-container h1{
+	font-size: 20px;
+}
+.grid{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap:20px;
+}
+.red{
+	color: red;
+}
+.mainhead{
+	position: fixed;
+	text-transform: uppercase;
+	color: rgb(81, 107, 255);
+	text-align: center;
+	font-size: 22px;
+	padding: 15px 0;
+	width: 100%;
+	height: 80px;
+	background: rgb(247, 247, 247);
+	z-index: 111;
+}
+.flex{
+	display: flex;
+}
+.container{
+	top:80px;
+	width:100%;
+	height: 100px;
+}
+/*dashboad style*/
+.menu{
+	position: fixed;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #042331;
+	transition: all 1.5s;
+	z-index: 1000;
+}
+.menu  header{
+	font-size: 22px;
+	color: white;
+	line-height: 70px;
+	text-align: center;
+	background-color:#063146;
+	user-select: none;
+}
+.menu{
+	top: 80px;
+
+}
+.content{
+	position: absolute;
+	top: 55px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	transition: all 1.5s ease;
+}
+.menu ul li a i{
+	margin-right: 16px;
+}
+.submenu ul{
+	display: none;
+}
+.menu ul li:hover{
+	cursor: pointer;
+}
+#check{
+	display: none;
+}
+label #btn, label #cancel{
+	position: fixed;
+	cursor: pointer;
+	background: #042331;
+	display: none;
+}
+label #btn{
+	z-index: 112;
+	left: 5px;
+	top:80px;
+	font-size: 25px;
+	color:white;
+	padding: 5px 10px;
+	transition: all 1.4s ease;
+}
+#check:checked ~ .menu{
+	left: 0px;
+	transform: all 4s;
+}
+#home{
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 1px;
+	height: 20px;
+	background-color: black;
+}
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+}
+label #cancel{
+	z-index: 1112;
+	left: -195px;
+	top:80px;
+	color: #0a5275;
+	padding: 4px 9px;
+	transition:all 1.4s ease;
+}
+#check:checked ~ label #cancel{
+	left:195px;
+}
+#check:checked ~ section{
+	left:252px;
+}
+.menu ul a{
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: white;
+	box-sizing: border-box;
+	padding-left: 40px;
+	border-top:1px solid rgba(255,255,255,.1);
+	border-bottom:1px solid black;
+	transition: all .4s;
+}
+.menu ul li:hover a{
+	padding-left: 50px;
+}
+

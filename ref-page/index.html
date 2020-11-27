@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ref luckysummer</title>
+	<script src="jquary.js"></script>
+	<link rel="stylesheet" type="text/css" href="mainstyle.css">
+</head>
+<body>
+	<h1 class="mainhead">REEDEMED <span class="red">EVANGELISTIC</span>  FELLOSHIP LUCKYSUMMER CHURCH</h1>
+	<div class="main-menu">
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">contact us</a></li>
+			<li><a href="#">departments</a></li>
+		</ul>
+	</div>
+	<div class="socialContainer">
+	</div>
+	    <input type="checkbox" id="check">
+		<label for="check" ><i class="fas fa-bars" id="btn"></i></label>
+		<label for="check" ><i class="fas fa-times" id="cancel"></i></label>
+		<input type="button" id="hide">
+		<input type="button" id="show">
+
+		</div>
+	<div id="menu" class="menu">
+		<header>Dashboard</header>
+ 			<ul>
+				<li class="active"><a href="#" ><i class="fas fa-home"></i>home</a></li>
+ 				<li><a href="#"><i class="fa fa-briefcase"></i>about us</a></li>
+				<li><a href="#"><i class="fa fa-archive"></i>programmes</a>
+					<div class="submenu">
+						<ul>
+							<li>services</li>
+							<li>weekly meetings</li>
+							<li></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#"><i class="fa fa-user-circle"></i>contact</a></li>
+				<li><a href="#"><i class="fa fa-users"></i>department</a>
+					<div class="submenu">
+						<ul>
+							<li>kings</li>
+							<li>queens</li>
+							<li>youth</li>
+							<li>teens</li>
+							<li>sunday-school</li>
+						</ul>
+                    </div>
+				</li>
+				<li onclick="signup()"><a href="#"><i class="fas fa-user-plus"></i>sign up</a></li>
+			 </ul>
+	</div>
+	<div class="main-container grid">
+		<div class="container-welcome">
+			<h1>reedemed evengelistic felloship (ref luckysummer)</h1>
+			<p>we greet you all in the name of jesus christ our savour, welcome to this forum, where will be updating you on church's programs and the activities to take place through out the week </p>
+			<p>feel most welcomed as we work together to spread the gospel of christ through all forms of communication. 
+			<button onclick="maximize()"></button>
+			</p><br><br>
+			<section id="read">
+			<h1>church theme</h1>
+			<p><span class="verse">Hebrews 6:1</span><br>"1.Let us go forward, to maturity teaching and leave behind us the first lessons of thechristian message.we should not lay aginst the foundation of turning away from useless works and believe in God 2.Of the teachings about baptisms and the laying on of hands; of the resurection of the dead and the eternal judgement 3.let us go forward! And this is what we will do. if God allows" </p>
+			</section>
+		</div>
+		<div class="container-form">
+			<div class="form-control">
+				<input type="text" placeholder="Name" id="name" required>
+			</div>
+			<div class="form-control">
+				<input type="text" placeholder="pnone number" id="phone" required>
+			</div>
+			<div class="form-control">
+				<input type="email" placeholder="email  (if have)" id="email" >
+			</div>
+			<div class="form-control">
+				<input type="submit" name="send" id="email" >
+			</div>
+	</div>
+		</div>
+	<script src="script.js"></script>
+</body>
+</html>
